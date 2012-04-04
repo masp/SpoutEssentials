@@ -1,7 +1,5 @@
 package org.skawke.masp.spoutessentials.data;
 
-import java.io.File;
-
 import org.bukkit.entity.Player;
 import org.skawke.masp.spoutessentials.data.storage.DataNode;
 

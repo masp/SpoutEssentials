@@ -7,6 +7,7 @@ import org.skawke.masp.spoutessentials.SpoutEssentials;
 import org.skawke.masp.spoutessentials.config.configs.Config;
 import org.skawke.masp.spoutessentials.config.configs.configfiles.DataConfig;
 import org.skawke.masp.spoutessentials.config.configs.configfiles.GeneralConfig;
+import org.skawke.masp.spoutessentials.config.configs.configfiles.ModuleConfig;
 import org.skawke.masp.spoutessentials.config.configs.configfiles.RegionConfig;
 
 public class ConfigManager {
@@ -18,6 +19,8 @@ public class ConfigManager {
 		Config dataConfig = new DataConfig(plugin.getDataFolder());
 		Config genConfig = new GeneralConfig(plugin.getDataFolder());
 		Config regionConfig = new RegionConfig(plugin.getDataFolder());
+		Config moduleConfig = new ModuleConfig(plugin.getDataFolder());
+		this.addConfig(moduleConfig);
 		this.addConfig(dataConfig);
 		this.addConfig(genConfig);
 		this.addConfig(regionConfig);
